@@ -4,3 +4,10 @@
 
 [template]
   incoming-hooks = ["Ghost"]
+
+[[plugins]]
+  package = "netlify-plugin-minify-html"
+ 
+  [plugins.inputs]
+    ext = "html"
+    config = ".htmlvalidate.json"
